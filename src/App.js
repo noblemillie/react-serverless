@@ -1,23 +1,21 @@
 import React from 'react'
 import { useEffect, useState } from 'react'
 import './App.css'
+// import { date } from './api/date'
 
 function App() {
-  const [date, setDate] = useState(null)
+  const [input, setInput] = useState(null)
+
   useEffect(() => {
-    async function getDate() {
-      const res = await fetch('/api/date')
-      const newDate = await res.text()
-      setDate(newDate)
-    }
-    getDate()
-  }, [])
+    setInput('what does Marsellus Wallace look like?')
+  }, [input, setInput])
   return (
     <main>
-      <h1>Now you tell em</h1>
+      <h1>say what again</h1>
 
-      <h2>The date according to Go is:</h2>
-      <p>{date ? date : 'Loading date...'}</p>
+      <h2>I double dare you</h2>
+      <p>{input ? input : 'Loading input...'}</p>
+      <p>{/* To test the API, <a href="/api/date">check todays date</a>. */}</p>
     </main>
   )
 }
