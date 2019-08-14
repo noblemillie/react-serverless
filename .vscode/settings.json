@@ -2,5 +2,6 @@
       "editor.cursorStyle": "line-thin",
       "editor.cursorSmoothCaretAnimation": true,
       "terminal.integrated.cursorStyle": "line",
-      "workbench.editor.centeredLayoutAutoResize": false
+      "workbench.editor.centeredLayoutAutoResize": false,
+      "workbench.colorTheme": "Snazzy Operator"
 }
