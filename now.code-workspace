@@ -7,7 +7,7 @@
   "settings": {
     "terminal.integrated.cursorStyle": "line",
     "workbench.editor.centeredLayoutAutoResize": false,
-    "workbench.colorTheme": "Snazzy Operator",
+    "workbench.colorTheme": "Slack Theme Aubergine Dark",
     "terminal.integrated.fontFamily": "Menlo, Monaco, 'Courier New', monospace"
   }
 }
