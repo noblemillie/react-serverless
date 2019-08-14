@@ -1,23 +1,47 @@
 import React from 'react'
 import { useEffect, useState } from 'react'
 import './App.css'
-// import { date } from './api/date'
+
+import List from './components/List'
 
 function App() {
-  const [input, setInput] = useState(null)
+  // const [input, setInput] = useState('')
+  const [question, setQuestion] = useState(
+    'what does Marsellus Wallace look like?'
+  )
+  const [response, setResponse] = useState('')
+
+  console.log(`#response length: `, response.length)
 
   useEffect(() => {
-    setInput('what does Marsellus Wallace look like?')
-  }, [input, setInput])
+    what(response)
+  }, [response, setResponse, question, setQuestion])
+
+  const what = answer => {
+    if (answer.length > 0) {
+      setTimeout(() => setQuestion(`SAY "WHAT" AGAIN! I double dare you`), 3000)
+    }
+  }
+
   return (
     <main>
-      <h1>say what again</h1>
-
-      <h2>I double dare you</h2>
-      <p>{input ? input : 'Loading input...'}</p>
-      <p>{/* To test the API, <a href="/api/date">check todays date</a>. */}</p>
+      <h4> {question}</h4>
+      {response && (
+        <h5>
+          say <code>what</code>again
+        </h5>
+      )}
+      <div>{response}</div>
+      <input
+        onChange={e => setResponse(e.target.value)}
+        value={response}></input>
+      <List />
+      <h5>
+        say <code>what</code>again
+      </h5>
     </main>
   )
+  // }
 }
 
 export default App

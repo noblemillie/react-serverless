@@ -1,5 +1,5 @@
 main {
-  align-content: flex-start;
+  align-content: space-between;
   box-sizing: border-box;
   display: grid;
   font-family: 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica',
@@ -9,8 +9,10 @@ main {
   margin: 0 auto;
   max-width: 680px;
   min-height: 100vh;
+  padding: 20px;
   /* padding: 72px 0; */
-  text-align: center;
+  text-align: start;
+  /* text-align-last: end; */
 }
 h1 {
   font-size: 45px;
