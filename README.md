@@ -1,4 +1,4 @@
-# React Example
+a# React Example
 
 This directory is a brief example of a [React](https://reactjs.org/) app with serverless functions that can be deployed to ZEIT Now with zero configuration.
 
