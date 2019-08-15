@@ -1,38 +1,3 @@
-main {
-  align-content: space-between;
-  box-sizing: border-box;
-  display: grid;
-  font-family: 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica',
-    'Arial', sans-serif;
-  hyphens: auto;
-  line-height: 1.65;
-  margin: 0 auto;
-  max-width: 680px;
-  min-height: 100vh;
-  padding: 20px;
-  /* padding: 72px 0; */
-  text-align: start;
-  /* text-align-last: end; */
-}
-h1 {
-  font-size: 45px;
-}
-h2 {
-  margin-top: 1.5em;
-}
-p {
-  font-size: 16px;
-}
-a {
-  border-bottom: 1px solid white;
-  color: #0076ff;
-  cursor: pointer;
-  text-decoration: none;
-  transition: all 0.2s ease;
-}
-a:hover {
-  border-bottom: 1px solid #0076ff;
-}
 code,
 pre {
   color: #d400ff;
@@ -43,4 +8,14 @@ pre {
 code:before,
 code:after {
   content: '\`';
+}
+
+.main-wrapper {
+  background-color: lightyellow;
+  padding: 10px;
+}
+
+.board {
+  background-color: lightgrey;
+  padding: 10px;
 }

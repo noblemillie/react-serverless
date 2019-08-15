@@ -1,36 +1,35 @@
 {
   "boards": [
     {
-      "id": "queue",
-      "name": "Queue",
-      "position": 2,
+      "name": "Winnie",
+      "position": 0,
       "listItems": [
         {
-          "title": "app design",
-          "detail": "break UI into component hierarchy",
-          "number": 1
+          "desciption": "break UI into component hierarchy",
+          "boardId": 0
         },
         {
-          "title": "build main components",
-          "detail": "build a static version that renders correct layout",
-          "number": 2
+          "desciption": "build a static version that renders correct layout",
+          "boardId": 0
         },
         {
-          "title": "add interactivity",
-          "detail": "wire up react hooks",
-          "number": 3
+          "desciption": "wire up react hooks",
+          "boardId": 0
         }
       ]
     },
     {
-      "id": "done",
-      "name": "Done",
+      "name": "Bob",
       "position": 1,
       "listItems": [
         {
           "title": "app development plan",
-          "detail": "create the blueprint for app development ",
-          "number": 1
+          "desciption": "create the blueprint for app development ",
+          "boardId": 1
+        },
+        {
+          "desciption": "cash checks! ",
+          "boardId": 1
         }
       ]
     }
