@@ -1,9 +1,13 @@
-import React, { Component } from 'react'
+import React, { Component, useEffect, useState, useRef } from 'react'
 
-class Item extends Component {
-  render() {
-    return <li>item component</li>
-  }
-}
+const Item = () => {
+  const[content, setContent] = useState('');
+  
+
+
+  render(
+    return <li>{content}</li>
+
+)
 
 export default Item
