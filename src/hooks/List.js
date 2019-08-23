@@ -1,16 +1,14 @@
-import React, { Component } from 'react'
+import React, { useState, useEffect } from 'react'
 import Item from './Item'
 
-class List extends Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      items: [
-        { firstName: 'Rip', lastName: 'Byte III' },
-        { firstName: 'DJ', lastName: 'State' }
-      ]
-    }
-  }
+const List = () => {
+  const defaultItem = [
+    {firstName: 'Rip', lastName: 'Byte III'},
+    {firstName: 'DJ', lastName: 'State'}
+  ];
+
+  const [items, setItems] = useState(defaultItem)
+    
 
   render() {
     return (
